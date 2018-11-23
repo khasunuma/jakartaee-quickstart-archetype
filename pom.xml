@@ -1,9 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
+  <!-- The Basics -->
   <groupId>jp.coppermine</groupId>
   <artifactId>jakartaee-quickstart-archetype</artifactId>
   <version>1.0.0</version>
   <packaging>maven-archetype</packaging>
+  
+  <!-- Build Settings -->
   <build>
     <extensions>
       <extension>
@@ -23,30 +27,87 @@
         <artifactId>maven-source-plugin</artifactId>
         <version>3.0.1</version>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.0.1</version>
-        <configuration>
-          <show>package</show>
-          <source>8</source>
-          <encoding>UTF-8</encoding>
-          <docencoding>UTF-8</docencoding>
-          <charset>UTF-8</charset>
-          <links>
-            <link>https://docs.oracle.com/javase/8/docs/api/</link>
-            <link>https://javaee.github.io/javaee-spec/javadocs/</link>
-          </links>
-        </configuration>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>jar</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
+  
+  <!-- More Project Information -->
+  <name>Archetype for Jakarta EE Quick Start</name>
+  <description>Archetype for Jakarta EE quick start template with JSF and JAX-RS</description>
+  <url>https://github.com/khasunuma/jakartaee-quickstart-archetype</url>
+  <inceptionYear>2018</inceptionYear>
+  <licenses>
+    <license>
+      <name>BSD 2-Clause "Simplified" License</name>
+      <url>https://github.com/khasunuma/jakartaee-quickstart-archetype/blob/master/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <organization>
+    <name>coppermine.jp</name>
+    <url>https://www.coppermine.jp/</url>
+  </organization>
+  <developers>
+    <developer>
+      <id>khasunuma</id>
+      <name>HASUNUMA Kenji</name>
+      <email>khasunuma@coppermine.jp</email>
+      <roles>
+        <role>developer</role>
+      </roles>
+      <timezone>9</timezone>
+    </developer>
+  </developers>
+  
+  <!-- Environment Settings -->
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/khasunuma/jakartaee-quickstart-archetype/issues</url>
+  </issueManagement>
+  <scm>
+    <url>https://github.com/khausnuma/jakartaee-quickstart-archetype</url>
+    <connection>scm:git:git://github.com/khausnuma/jakartaee-quickstart-archetype.git</connection>
+    <developerConnection>scm:git:git://github.com/khausnuma/jakartaee-quickstart-archetype.git</developerConnection>
+  </scm>
+  <distributionManagement>
+    <repository>
+      <id>sonatype-nexus-staging</id>
+      <name>Nexus Release Repository</name>
+      <uniqueVersion>false</uniqueVersion>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+    </repository>
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshot</id>
+      <uniqueVersion>false</uniqueVersion>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <profiles>
+    <profile>
+      <id>release-sign-artifacts</id>
+      <activation>
+        <property>
+          <name>performRelease</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.6</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
