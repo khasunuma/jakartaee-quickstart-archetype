@@ -10,5 +10,5 @@ Jakarta EE 8 quick start template with Jakarta Server Faces and Jakarta RESTful 
 
 1. Create Maven project using this archetype.
 2. Run `mvn install` command to build.
-3. Open http://*hostname*:*port*/*context-root*/index.xhtml to test sample JavaServer Faces application.
-4. Open http://*hostname*:*port*/*context-root*/api/hello to test sample JAX-RS resource.
+3. Open http://*hostname*:*port*/*context-root*/index.xhtml to test Jakarta Server Faces.
+4. Open http://*hostname*:*port*/*context-root*/api/hello to test Jakarta RESTful Web Services.
