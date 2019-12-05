@@ -1,5 +1,5 @@
 # jakartaee-quickstart-archetype
-Jakarta EE 8 quick start template with JSF and JAX-RS
+Jakarta EE 8 quick start template with Jakarta Server Faces and Jakarta RESTful Web Services
 
 ## Requirements
 
