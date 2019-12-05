@@ -64,9 +64,9 @@
     <url>https://github.com/khasunuma/jakartaee-quickstart-archetype/issues</url>
   </issueManagement>
   <scm>
-    <url>scm:git:git@github.com:khasunuma/jakartaee-quickstart-archetype.git</url>
-    <connection>scm:git:git@github.com:khasunuma/jakartaee-quickstart-archetype.git</connection>
-    <developerConnection>scm:git:git@github.com:khasunuma/jakartaee-quickstart-archetype.git</developerConnection>
+    <url>https://github.com/khasunuma/jakartaee-quickstart-archetype</url>
+    <connection>https://github.com/khasunuma/jakartaee-quickstart-archetype.git</connection>
+    <developerConnection>https://github.com/khasunuma/jakartaee-quickstart-archetype.git</developerConnection>
   </scm>
   <distributionManagement>
     <repository>
