@@ -32,7 +32,7 @@
   
   <!-- More Project Information -->
   <name>Archetype for Jakarta EE Quick Start</name>
-  <description>Archetype for Jakarta EE quick start template with JSF and JAX-RS</description>
+  <description>Jakarta EE quick start template with Jakarta Server Faces and Jakarta RESTful Web Services</description>
   <url>https://github.com/khasunuma/jakartaee-quickstart-archetype</url>
   <inceptionYear>2018</inceptionYear>
   <licenses>
@@ -67,7 +67,6 @@
     <url>https://github.com/khausnuma/jakartaee-quickstart-archetype</url>
     <connection>scm:git:git://github.com/khausnuma/jakartaee-quickstart-archetype.git</connection>
     <developerConnection>scm:git:git://github.com/khausnuma/jakartaee-quickstart-archetype.git</developerConnection>
-    <tag>jakartaee-quickstart-archetype-8.0.0</tag>
   </scm>
   <distributionManagement>
     <repository>
@@ -76,13 +75,11 @@
       <uniqueVersion>false</uniqueVersion>
       <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
     </repository>
-    <!--
     <snapshotRepository>
       <id>sonatype-nexus-snapshot</id>
       <uniqueVersion>false</uniqueVersion>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
-    -->
   </distributionManagement>
   <profiles>
     <profile>
