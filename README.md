@@ -1,10 +1,10 @@
 # jakartaee-quickstart-archetype
-Java EE 8 quick start template with JSF and JAX-RS
+Jakarta EE 8 quick start template with JSF and JAX-RS
 
 ## Requirements
 
 * JDK 8 and Maven 3 to build.
-* Jakarta EE / Java EE 8 server to test sample applications.
+* Jakarta EE 8 server to test sample applications.
 
 ## How to use
 
