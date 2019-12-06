@@ -4,7 +4,7 @@
   <!-- The Basics -->
   <groupId>jp.coppermine</groupId>
   <artifactId>jakartaee-quickstart-archetype</artifactId>
-  <version>8.0.1-SNAPSHOT</version>
+  <version>8.0.1</version>
   <packaging>maven-archetype</packaging>
   
   <!-- Build Settings -->
@@ -102,7 +102,7 @@
     <url>https://github.com/khasunuma/jakartaee-quickstart-archetype</url>
     <connection>scm:git:https://github.com/khasunuma/jakartaee-quickstart-archetype.git</connection>
     <developerConnection>scm:git:https://github.com/khasunuma/jakartaee-quickstart-archetype.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>v8.0.1</tag>
   </scm>
   <distributionManagement>
     <repository>
