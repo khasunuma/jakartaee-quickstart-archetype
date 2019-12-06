@@ -13,3 +13,7 @@ buildNumber.properties
 
 # Eclipse project file
 .project
+
+# IntelliJ IDEA project file
+.idea/
+*.iml
